@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Thengu: coconut palm leaning over the water -->
+  <path d="M11 31 Q 13 20 19 11" stroke="#B07A3E" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <g stroke="#3E9B5F" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <path d="M19 11 Q 12 7 5 11"/>
+    <path d="M19 11 Q 15 3 9 3"/>
+    <path d="M19 11 Q 22 3 28 3"/>
+    <path d="M19 11 Q 26 9 30 15"/>
+    <path d="M19 11 Q 22 15 23 21"/>
+  </g>
+  <circle cx="18" cy="13" r="1.6" fill="#8A5A2B"/>
+  <circle cx="20.4" cy="13.2" r="1.6" fill="#8A5A2B"/>
+  <path d="M2 30 Q 9 28 16 30 T 30 30" stroke="#4F9CC0" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+</svg>

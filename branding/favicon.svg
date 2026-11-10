@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Kalivilakku flame for the browser tab -->
+  <path d="M16 1.5 C 20 6.5 20.5 10 16 12.5 C 11.5 10 12 6.5 16 1.5 Z" fill="#E8873A"/>
+  <path d="M16 5 C 18 8 18 10 16 11.3 C 14 10 14 8 16 5 Z" fill="#F7D46A"/>
+  <path d="M7 13 H25 L21.5 17 H10.5 Z" fill="#C9963A"/>
+  <rect x="14.2" y="17" width="3.6" height="9" fill="#A97B2C"/>
+  <path d="M9 30 H23 L20.5 26 H11.5 Z" fill="#C9963A"/>
+</svg>

@@ -1,0 +1,26 @@
+{
+  "slug": "kasavu",
+  "name": "Kasavu",
+  "emoji": "🌴",
+  "level": 2,
+  "formatVersion": 1,
+  "fonts": [
+    {
+      "family": "Manjari",
+      "file": "manjari-regular.ttf",
+      "weight": 400,
+      "role": "sans"
+    },
+    {
+      "family": "Manjari",
+      "file": "manjari-bold.ttf",
+      "weight": 700,
+      "role": "sans"
+    }
+  ],
+  "topbar": {
+    "light": "light.html",
+    "dark": "dark.html",
+    "height": "10px"
+  }
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="t">
+  <title id="t">Kasavu: cream handloom cloth with a broad gold zari border</title>
+  <defs>
+    <linearGradient id="zari" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8C46A"/>
+      <stop offset="0.5" stop-color="#C9A24A"/>
+      <stop offset="1" stop-color="#8A6414"/>
+    </linearGradient>
+    <pattern id="weave" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="1.4" height="4" fill="#FFF3CC" opacity="0.4"/>
+    </pattern>
+    <clipPath id="cloth"><rect x="4" y="4" width="56" height="56" rx="10"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#cloth)">
+    <!-- Handloom cream body -->
+    <rect x="4" y="4" width="56" height="56" fill="#FBF6EA"/>
+    <!-- Thin kara along the top edge (a mundu is bordered on both edges) -->
+    <rect x="4" y="12" width="56" height="4" fill="#C9A24A"/>
+    <!-- Broad woven kasavu band along the hem -->
+    <rect x="4" y="34" width="56" height="20" fill="url(#zari)"/>
+    <rect x="4" y="34" width="56" height="20" fill="url(#weave)"/>
+    <!-- Pin line above the band -->
+    <rect x="4" y="28.5" width="56" height="2.5" fill="#B08A32"/>
+    <!-- Cream hem below the band -->
+    <rect x="4" y="54" width="56" height="6" fill="#FBF6EA"/>
+  </g>
+
+  <!-- Outline so the cloth holds its shape on a cream background -->
+  <rect x="4" y="4" width="56" height="56" rx="10" fill="none" stroke="#8A6414" stroke-width="3"/>
+</svg>

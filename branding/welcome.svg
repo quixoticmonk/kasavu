@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-labelledby="t">
+  <title id="t">Kathakali Pachcha face</title>
+  <!-- Kireedam (crown): gold disc with a darker rim and red gems -->
+  <circle cx="48" cy="44" r="44" fill="#D9A440"/>
+  <circle cx="48" cy="44" r="44" fill="none" stroke="#9C7425" stroke-width="3"/>
+  <circle cx="48" cy="44" r="37" fill="none" stroke="#9C7425" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <g fill="#C8372D">
+    <circle cx="48" cy="7" r="4"/>
+    <circle cx="22" cy="16" r="3"/>
+    <circle cx="74" cy="16" r="3"/>
+    <circle cx="10" cy="38" r="2.5"/>
+    <circle cx="86" cy="38" r="2.5"/>
+  </g>
+  <!-- Chutti: the white rice-paste frame -->
+  <ellipse cx="48" cy="56" rx="30" ry="34" fill="#FFFBF2"/>
+  <ellipse cx="48" cy="56" rx="30" ry="34" fill="none" stroke="#E6D9B8" stroke-width="2" stroke-dasharray="2 4"/>
+  <!-- Pachcha: the green face of noble characters -->
+  <ellipse cx="48" cy="55" rx="23" ry="27" fill="#2E9A55"/>
+  <!-- Tilak -->
+  <path d="M45 30 L48 41 L51 30 Z" fill="#C8372D"/>
+  <circle cx="48" cy="29" r="2.2" fill="#F7D46A"/>
+  <!-- Eyes: thick black liner, red-rimmed -->
+  <path d="M30 49 Q38 43 45 49 Q38 52 30 49 Z" fill="#FFFBF2" stroke="#111" stroke-width="2.4"/>
+  <path d="M51 49 Q58 43 66 49 Q58 52 51 49 Z" fill="#FFFBF2" stroke="#111" stroke-width="2.4"/>
+  <circle cx="38" cy="48.5" r="2.3" fill="#111"/>
+  <circle cx="58" cy="48.5" r="2.3" fill="#111"/>
+  <path d="M29 42 Q37 37 45 42 M51 42 Q59 37 67 42" stroke="#111" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <!-- Coral-red lips -->
+  <path d="M38 68 Q48 76 58 68 Q48 71 38 68 Z" fill="#E0503F" stroke="#B83A2C" stroke-width="1"/>
+  <!-- Yellow cheek line -->
+  <path d="M30 60 Q32 72 40 78 M66 60 Q64 72 56 78" stroke="#F7D46A" stroke-width="1.6" fill="none"/>
+</svg>

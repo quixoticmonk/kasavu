@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kerala kasavu border</title>
+<style>
+  /* Kasavu kara drawn along the very top edge of the window.
+     Kiro Crew renders this file in a click-through, sandboxed strip, so it is
+     decoration only. Light mode: zari gold on handloom cream. */
+  html, body { margin: 0; height: 100%; background: transparent; overflow: hidden; }
+  .kara {
+    position: absolute; left: 0; right: 0; top: 0; height: 6px;
+    background:
+      repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0 1px, transparent 1px 3px),
+      linear-gradient(180deg, #D9B25A 0%, #C9A24A 55%, #A88534 100%);
+  }
+  .pin {
+    position: absolute; left: 0; right: 0; top: 8px; height: 1px;
+    background: #C9A24A;
+  }
+  /* Zari shimmer: a soft band of light that crosses the border slowly. */
+  .shine {
+    position: absolute; top: 0; height: 6px; width: 30%; left: -30%;
+    background: linear-gradient(90deg, transparent, rgba(255, 248, 220, 0.75), transparent);
+    animation: sweep 9s ease-in-out infinite;
+  }
+  @keyframes sweep { 0% { left: -30%; } 60%, 100% { left: 100%; } }
+  .still .shine { animation: none; display: none; }
+  @media (prefers-reduced-motion: reduce) { .shine { animation: none; display: none; } }
+</style>
+</head>
+<body>
+  <div class="kara"></div>
+  <div class="shine"></div>
+  <div class="pin"></div>
+<script>
+  // Kiro Crew posts {type:'theme:state', reducedMotion} to theme frames.
+  window.addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'theme:state') {
+      document.body.classList.toggle('still', d.reducedMotion === true);
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* Kerala theme: structural touches only. Colors live in variables.json.
+   --ring carries the bright zari gold in both modes, so every band below
+   follows light/dark automatically. */
+
+/* Kasavu kara along the top bar: a broad woven gold band with a fine pin
+   line above it, the way the border sits on the edge of a mundu. */
+.topbar {
+  background-image:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.28) 0 1px, transparent 1px 3px),
+    linear-gradient(var(--ring), var(--ring)),
+    linear-gradient(var(--ring), var(--ring));
+  background-size: 100% 6px, 100% 6px, 100% 1px;
+  background-position: left bottom, left bottom, left bottom 9px;
+  background-repeat: no-repeat;
+}
+
+/* Wordmark: Kasavu in Malayalam, in the bottom-right corner. It inherits the
+   UI font (Manjari under the Sans option); a font can't be pinned on body.
+   body::after with pointer-events:none is the only click-through decoration
+   the theme contract allows; the top bar is a 3-column grid, so a pseudo
+   element there would either wrap or sit over real controls. */
+body::after {
+  content: "കസവ്";
+  position: fixed;
+  right: 14px;
+  bottom: 10px;
+  z-index: 50;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
+  color: var(--ring);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* The matching kara at the hem: same band along the bottom of the composer,
+   so the screen is framed top and bottom like the cloth. */
+.input-area {
+  background-image:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.28) 0 1px, transparent 1px 3px),
+    linear-gradient(var(--ring), var(--ring)),
+    linear-gradient(var(--ring), var(--ring));
+  background-size: 100% 6px, 100% 6px, 100% 1px;
+  background-position: left bottom, left bottom, left bottom 9px;
+  background-repeat: no-repeat;
+}
+
+/* Session sidebar: the panel is a rounded card, so the kara runs down its
+   right edge like the border of a draped neriyathu, with the pin line inside.
+   Only background-image is set, so the card keeps its own background color. */
+.sidebar {
+  background-image:
+    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0 1px, transparent 1px 3px),
+    linear-gradient(var(--ring), var(--ring)),
+    linear-gradient(var(--ring), var(--ring));
+  background-size: 6px 100%, 6px 100%, 1px 100%;
+  background-position: right top, right top, right 9px top;
+  background-repeat: no-repeat;
+}
+
+/* A thin kara edge on code blocks. */
+.code-block {
+  border-left: 3px solid var(--ring);
+}
